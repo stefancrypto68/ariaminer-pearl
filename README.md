@@ -1,34 +1,34 @@
 # ARIAMiner — Pearl (PRL) GPU Miner
 
-**A GPU miner for Pearl (PRL), purpose-optimized for the RTX 50 (Blackwell) architecture.**
+**A GPU miner for Pearl (PRL) — native support for RTX 30 (Ampere), RTX 40 (Ada) and RTX 50 (Blackwell), in a single binary.**
 
-- ✅ Performance and efficiency tuned specifically for RTX 50 / Blackwell
+- ✅ One binary for RTX 30 / 40 / 50 — the optimal kernel path is selected at runtime, per card
+- ✅ Zero-config: per-architecture tuning is applied automatically
 - ✅ Efficiency-first: sustains high GPU clocks at the same power budget
 - ✅ Operator-friendly: auto-reconnect, bounded RAM, versioned agent string, optional JSON stats endpoint
 - ✅ CUDA runtime bundled — no install required
 - ✅ Closed-source binary · transparent **1% announced dev-fee**
-- 🔜 A build optimized for the RTX 30 / 40 series is in active development
 
 ---
 
 ## Requirements
 
-- **GPU:** NVIDIA **RTX 50 series (Blackwell)**
+- **GPU:** NVIDIA **RTX 30 / 40 / 50 series**
 - **Driver:** NVIDIA 570 or newer
-- **OS:** Linux x86_64
+- **OS:** Linux x86_64 (native Linux recommended — WSL2 is not officially supported)
 - CUDA runtime is **bundled** — no CUDA install required.
 
 ## Download
 
 Grab the latest archive from [**Releases**](../../releases/latest):
-`ariaminer-v0.6.1-linux-x64.tar.gz` (binary + bundled runtime + `SHA256SUMS`).
+`ariaminer-v0.6.3-linux-x64.tar.gz` (binary + bundled runtime + `SHA256SUMS`).
 
 Verify and extract:
 
 ```bash
 sha256sum -c SHA256SUMS
-tar xzf ariaminer-v0.6.1-linux-x64.tar.gz
-cd ariaminer-v0.6.1
+tar xzf ariaminer-v0.6.3-linux-x64.tar.gz
+cd ariaminer-v0.6.3
 ```
 
 ## Quick start (LuckyPool)
