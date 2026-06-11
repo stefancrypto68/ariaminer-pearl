@@ -1,0 +1,4 @@
+release/
+pkg/
+*.tar.gz
+*.tar.gz.sha256
