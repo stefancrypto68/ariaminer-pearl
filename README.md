@@ -42,6 +42,22 @@ LD_LIBRARY_PATH=. ./ariaminer \
 
 The pool dialect is auto-detected from the pool host — no extra flags needed.
 
+## HiveOS
+
+ARIAMiner ships as a HiveOS **custom miner** (multi-GPU rigs supported — one worker per GPU, aggregated stats).
+
+Flight sheet:
+
+| Field | Value |
+|-------|-------|
+| Miner | `Custom` |
+| Installation URL | `https://github.com/stefancrypto68/ariaminer-pearl/releases/download/v0.6.3/ariaminer-0.6.3-hiveos.tar.gz` |
+| Miner name | `ariaminer` (auto-filled from the URL) |
+| Wallet and worker template | `%WAL%` (your `prl1...` address) |
+| Pool URL | `pearl-eu2.luckypool.io:3360` |
+
+Requires a HiveOS image with NVIDIA driver 570+ (needed for RTX 50; RTX 30/40 work with the same image).
+
 ## Options
 
 | Flag | Description |
